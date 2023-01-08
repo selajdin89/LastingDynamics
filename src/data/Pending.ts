@@ -1,0 +1,51 @@
+export const pendingReviews = [
+  {
+    task: "Lorem Ipsum is simply dummy text....",
+    priority: "urgent",
+    status: "red",
+    type: "LDWebsite",
+    color: "#61D26F",
+  },
+  {
+    task: "Lorem Ipsum is simply dummy text....",
+    priority: "urgent",
+    status: "red",
+    type: "LDWebsite",
+    color: "#61D26F",
+  },
+  {
+    task: "Lorem Ipsum is simply dummy text....",
+    priority: "urgent",
+    status: "red",
+    type: "LDWebsite",
+    color: "#61D26F",
+  },
+  {
+    task: "Lorem Ipsum is simply dummy text....",
+    priority: "urgent",
+    status: "red",
+    type: "LDWebsite",
+    color: "#61D26F",
+  },
+  {
+    task: "Lorem Ipsum is simply dummy text....",
+    priority: "urgent",
+    status: "red",
+    type: "LDWebsite",
+    color: "#61D26F",
+  },
+  {
+    task: "Lorem Ipsum is simply dummy text....",
+    priority: "urgent",
+    status: "red",
+    type: "LDWebsite",
+    color: "#61D26F",
+  },
+  {
+    task: "Lorem Ipsum is simply dummy text....",
+    priority: "urgent",
+    status: "red",
+    type: "LDWebsite",
+    color: "#61D26F",
+  },
+];
