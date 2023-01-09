@@ -1,12 +1,4 @@
-import {
-  Box,
-  Button,
-  Stack,
-  Typography,
-  IconButton,
-  FormControl,
-  OutlinedInput,
-} from "@mui/material";
+import { Box, Button, Stack, Typography, IconButton } from "@mui/material";
 import {
   AddIcon,
   CalendarIcon,
@@ -20,6 +12,7 @@ import {
 import TableObjectives from "../components/Dashboard/TableObjectives";
 import NotificationPanel from "../components/Dashboard/NotificationPanel";
 import { Route, Routes, useLocation } from "react-router-dom";
+import setLoading from "../HOC/setLoading";
 
 const Objectives = () => {
   const { state }: { state: any } = useLocation();
@@ -100,4 +93,4 @@ const Objectives = () => {
   );
 };
 
-export default Objectives;
+export default setLoading(Objectives);

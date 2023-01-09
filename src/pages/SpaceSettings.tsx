@@ -6,6 +6,7 @@ import { appBarStyle, toolBarStyle } from "../muiStyles/StyleDashbord";
 import TableSpaceSettings from "../components/Dashboard/TableSpaceSettings";
 import { NavLink, Route, Routes } from "react-router-dom";
 import Info from "../components/Dashboard/Info";
+import setLoading from "../HOC/setLoading";
 
 const SpaceSettings = () => {
   const open = false;
@@ -43,7 +44,7 @@ const SpaceSettings = () => {
       </Box>
       <Grid
         container
-        p="53px 0 53px 0"
+        p="5.3rem 0 5.3rem 0"
         sx={{
           "&.MuiGrid-root .MuiGrid-item": {
             borderRight: "2px solid #F4F6FC",
@@ -54,18 +55,18 @@ const SpaceSettings = () => {
           <Box display="flex" alignItems="center" mt="5px">
             <SettingsBlueIcon />
             <Typography
-              fontSize="14px"
+              fontSize="1.4rem"
               fontWeight="500"
-              sx={{ color: "#4C84FF", ml: " 11px" }}
+              sx={{ color: "#4C84FF", ml: " 1.1rem" }}
             >
               Space Settings
             </Typography>
           </Box>
           <Box
             sx={{
-              "&.MuiBox-root>.MuiTypography-root": { fontSize: "14px" },
-              ml: "25px",
-              mt: "22px",
+              "&.MuiBox-root>.MuiTypography-root": { fontSize: "1.4rem" },
+              ml: "2.5rem",
+              mt: "2.2rem",
             }}
           >
             <NavLink
@@ -82,7 +83,7 @@ const SpaceSettings = () => {
               }
               to="members"
             >
-              <Typography sx={{ mt: "24.5px" }}>Members</Typography>
+              <Typography sx={{ mt: "2.45rem" }}>Members</Typography>
             </NavLink>
           </Box>
         </Grid>
@@ -101,4 +102,4 @@ const SpaceSettings = () => {
   );
 };
 
-export default SpaceSettings;
+export default setLoading(SpaceSettings);

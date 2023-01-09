@@ -1,4 +1,4 @@
-import { useEffect, useState, useLayoutEffect } from "react";
+import { useState } from "react";
 import {
   Avatar,
   AvatarGroup,
@@ -117,7 +117,7 @@ const TableObjectives = ({ state }: any) => {
                 >
                   <Typography
                     textTransform="capitalize"
-                    fontSize="12px"
+                    fontSize="1.2rem"
                     fontWeight="500"
                     sx={{
                       visibility: !todo.priority ? "hidden" : "",
@@ -144,7 +144,7 @@ const TableObjectives = ({ state }: any) => {
                   sx={{ p: "0 23px", minWidth: "13.5rem" }}
                 >
                   <Typography
-                    fontSize="12px"
+                    fontSize="1.2rem"
                     fontWeight="500"
                     sx={{
                       visibility: !todo.status ? "hidden" : "",
@@ -164,7 +164,7 @@ const TableObjectives = ({ state }: any) => {
                     sx={{
                       textAlign: "center",
                       "&.MuiAvatarGroup-root .MuiAvatar-root": {
-                        marginLeft: "-20px",
+                        marginLeft: "-2rem",
                       },
 
                       "&.MuiAvatarGroup-root .MuiAvatar-root:first-of-type": {

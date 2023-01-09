@@ -9,13 +9,14 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Form from "../components/Authentication/Form";
 import Loading from "../components/Loading";
 import ErrorMessage from "../components/ErrorMessage";
 import SuccessMessage from "../components/SuccessMessage";
 import Title from "../components/Authentication/Title";
 import { linkStyle } from "../muiStyles/RouterLinks";
+import setLoading from "../HOC/setLoading";
 
 const textTitle = "signing up a new account";
 
@@ -23,12 +24,8 @@ const PasswordRecover = () => {
   const [error, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [newEmailInput, setNewEmailInput] = useState<string>("");
-  // const [passwordInput, setPasswordInput] = useState<string>("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  // const newPasswordHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
-  //   setPasswordInput(event.target.value);
-  // };
   const emailHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
     setNewEmailInput(event.target.value);
   };
@@ -142,4 +139,4 @@ const PasswordRecover = () => {
   );
 };
 
-export default PasswordRecover;
+export default setLoading(PasswordRecover);

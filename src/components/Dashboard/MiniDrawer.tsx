@@ -306,8 +306,8 @@ const MiniDrawer = () => {
                         onMouseLeave={() => setHover("")}
                       >
                         <Box
-                          width="12px"
-                          height="12px"
+                          width="1.2rem"
+                          height="1.2rem"
                           bgcolor={item.color}
                           borderRadius="3px"
                           mr="8px"

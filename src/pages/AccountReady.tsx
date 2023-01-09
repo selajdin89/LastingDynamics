@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Form from "../components/Authentication/Form";
 import MailIcon from "../assets/icons/MailIcon";
 import Title from "../components/Authentication/Title";
+import setLoading from "../HOC/setLoading";
 
 const textTitle = "signing up a new account";
 
@@ -58,4 +59,4 @@ const AccountReady = () => {
   );
 };
 
-export default AccountReady;
+export default setLoading(AccountReady);

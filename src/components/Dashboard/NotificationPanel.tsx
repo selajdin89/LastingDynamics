@@ -68,19 +68,22 @@ const NotificationPanel = () => {
       </Box>
       <Box pr="7.6rem" pl="2.4rem">
         <Typography
-          fontSize="24px"
+          fontSize="2.4rem"
           fontWeight="500"
-          sx={{ color: "#151B26", mt: "24px", mb: "24px" }}
+          sx={{ color: "#151B26", mt: "2.4rem", mb: "2.4rem" }}
         >
           Notification Center
         </Typography>
         <Box>
-          <Box p="10px">
-            <Typography fontSize="12px" sx={{ color: "#ADB0B8", mb: "14px" }}>
+          <Box p="1rem">
+            <Typography
+              fontSize="1.2rem"
+              sx={{ color: "#ADB0B8", mb: "1.4rem" }}
+            >
               Description
             </Typography>
             <Typography
-              fontSize="14px"
+              fontSize="1.4rem"
               component="p"
               sx={{ color: "rgba(21, 27, 38, 0.5)" }}
             >
@@ -90,8 +93,11 @@ const NotificationPanel = () => {
               molestias. Sunt.
             </Typography>
           </Box>
-          <Box mt="52px">
-            <Typography fontSize="12px" sx={{ color: "#ADB0B8", mb: "14px" }}>
+          <Box mt="5.2rem">
+            <Typography
+              fontSize="1.2rem"
+              sx={{ color: "#ADB0B8", mb: "1.4rem" }}
+            >
               Priority
             </Typography>
           </Box>
@@ -110,8 +116,8 @@ const NotificationPanel = () => {
             </Typography>
           </Box>
           <Typography
-            fontSize="12px"
-            sx={{ color: "#ADB0B8", mb: "14px", mt: "30px" }}
+            fontSize="1.2rem"
+            sx={{ color: "#ADB0B8", mb: "1.4rem", mt: "3rem" }}
           >
             Subproject
           </Typography>
@@ -120,8 +126,8 @@ const NotificationPanel = () => {
             <Typography sx={{ ml: "8px" }}>{state.name}</Typography>
           </Box>
           <Typography
-            fontSize="12px"
-            sx={{ color: "#ADB0B8", mb: "22px", mt: "30px" }}
+            fontSize="1.2rem"
+            sx={{ color: "#ADB0B8", mb: "2.2rem", mt: "3rem" }}
           >
             Assignees
           </Typography>
@@ -135,13 +141,13 @@ const NotificationPanel = () => {
                 background: "rgba(0, 121, 255, 0.296258)",
                 color: "#0079FF",
               }}
-              p="6px 12px"
+              p=".6rem 1.2rem"
             >
               <Avatar
-                sx={{ width: "20px", height: "20px", mr: "12px" }}
+                sx={{ width: "2rem", height: "2rem", mr: ".2rem" }}
                 alt="r"
               ></Avatar>
-              <Typography fontSize="12.5px">Iene Robert</Typography>
+              <Typography fontSize="1.25rem">Iene Robert</Typography>
               <IconButton>
                 <CloseIcon />
               </IconButton>
@@ -154,28 +160,28 @@ const NotificationPanel = () => {
                 background: "rgba(0, 121, 255, 0.296258)",
                 color: "#0079FF",
               }}
-              p="6px 12px"
+              p=".6rem 1.2rem"
             >
               <Avatar
-                sx={{ width: "20px", height: "20px", mr: "12px" }}
+                sx={{ width: "2rem", height: "2rem", mr: "1.2rem" }}
                 alt="r"
               ></Avatar>
-              <Typography fontSize="12.5px">Kristin Rich</Typography>
+              <Typography fontSize="1.25rem">Kristin Rich</Typography>
               <IconButton>
                 <CloseIcon />
               </IconButton>
             </Box>
           </Box>
           <Typography
-            fontSize="12px"
-            sx={{ color: "#ADB0B8", mb: "14px", mt: "30px" }}
+            fontSize="1.2rem"
+            sx={{ color: "#ADB0B8", mb: "1.4rem", mt: "3rem" }}
           >
             Linked Projects
           </Typography>
           <Typography component="span">10/12/2012</Typography>
           <Typography
-            fontSize="12px"
-            sx={{ color: "#ADB0B8", mb: "14px", mt: "30px" }}
+            fontSize="1.2rem"
+            sx={{ color: "#ADB0B8", mb: "1.4rem", mt: "3rem" }}
           >
             Due Date
           </Typography>
@@ -186,17 +192,17 @@ const NotificationPanel = () => {
         display="flex"
         alignItems="center"
         justifyContent="space-between"
-        mt="58px"
+        mt="5.8rem"
       >
         <Typography
-          fontSize="12px"
+          fontSize="1.2rem"
           fontWeight="500"
           textTransform="uppercase"
-          sx={{ color: "#4C84FF", ml: "33px" }}
+          sx={{ color: "#4C84FF", ml: "3.3rem" }}
         >
           Checkmarks
         </Typography>
-        <IconButton sx={{ mr: "29px" }}>
+        <IconButton sx={{ mr: "2.9rem" }}>
           <NewIcon />
         </IconButton>
       </Box>

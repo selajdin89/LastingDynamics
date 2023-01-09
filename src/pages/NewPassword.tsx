@@ -15,6 +15,7 @@ import Loading from "../components/Loading";
 import ErrorMessage from "../components/ErrorMessage";
 import SuccessMessage from "../components/SuccessMessage";
 import Title from "../components/Authentication/Title";
+import setLoading from "../HOC/setLoading";
 
 const textTitle = "signing up a new account";
 
@@ -129,4 +130,4 @@ const NewPassword = () => {
   );
 };
 
-export default NewPassword;
+export default setLoading(NewPassword);

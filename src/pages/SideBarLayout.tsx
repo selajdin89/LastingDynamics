@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Sidebar from "../components/Dashboard/Sidebar";
+import setLoading from "../HOC/setLoading";
 
 const SideBarLayout = () => {
   return (
@@ -10,4 +11,4 @@ const SideBarLayout = () => {
   );
 };
 
-export default SideBarLayout;
+export default setLoading(SideBarLayout);

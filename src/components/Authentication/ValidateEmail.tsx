@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Stack,
   Typography,
@@ -8,19 +8,11 @@ import {
   FormHelperText,
   Box,
 } from "@mui/material";
-import ErrorMessage from "../ErrorMessage";
 import { Link, useNavigate } from "react-router-dom";
 import { linkStyle } from "../../muiStyles/RouterLinks";
 
-// type Props = {
-//   isAuth: boolean;
-//   setIsAuth: React.Dispatch<React.SetStateAction<boolean>>;
-// };
-
 const ValidateEmail = () => {
   const [error, setError] = useState(false);
-  // const [isAuth, setIsAuth] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
   const [emailInput, setEmailInput] = useState<string>("");
 
   const navigate = useNavigate();
@@ -34,12 +26,9 @@ const ValidateEmail = () => {
   const submitHandler = (event: React.SyntheticEvent) => {
     event.preventDefault();
 
-    setIsLoading(true);
-
     if (emailIsNotValid) {
       setError(true);
     } else {
-      // setIsAuth(true);
       navigate("/validation", { replace: true });
     }
   };

@@ -13,6 +13,7 @@ import Form from "../components/Authentication/Form";
 import Loading from "../components/Loading";
 import Title from "../components/Authentication/Title";
 import ErrorMessage from "../components/ErrorMessage";
+import setLoading from "../HOC/setLoading";
 
 const textTitle = "Signing up a new account";
 
@@ -122,4 +123,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default setLoading(SignUp);

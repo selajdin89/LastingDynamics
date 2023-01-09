@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Box,
   Typography,
@@ -7,7 +7,6 @@ import {
   IconButton,
   Grid,
   Stack,
-  CssBaseline,
 } from "@mui/material";
 import userWellcome from "../assets/images/wellcome-user.png";
 import { AddIcon, BellIcon } from "../assets/icons";
@@ -23,7 +22,7 @@ import { Link, Route, Routes } from "react-router-dom";
 import { useAppSelector } from "../store";
 import { linkStyle } from "../muiStyles/RouterLinks";
 import TaskPlaceholder from "../components/Dashboard/TaskPlaceholder";
-import Loading from "../components/Loading";
+import setLoading from "../HOC/setLoading";
 
 const Dashboard = () => {
   const [openTasks, setOpenTasks] = useState(false);
@@ -167,4 +166,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default setLoading(Dashboard);

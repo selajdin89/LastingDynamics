@@ -11,18 +11,6 @@ type Props = {
 };
 
 const Sidebar: React.FC<Props> = ({ children }) => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-  }, []);
-
-  if (loading) {
-    return <Loading />;
-  }
-
   return (
     <Box sx={{ display: "flex", width: "100%", background: "#fff" }}>
       <CssBaseline />

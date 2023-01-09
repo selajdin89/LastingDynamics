@@ -4,12 +4,8 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItem,
-  Avatar,
   Tooltip,
 } from "@mui/material";
-import avatarImg from "../assets/images/avatar.jpeg";
-import LogoutIcon from "@mui/icons-material/Logout";
-import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import { useAppDispatch } from "../../store";
 import { setIsAuth } from "../../store/auth-slice";
 import { footerIcons } from "../../data/SidebarIcons";

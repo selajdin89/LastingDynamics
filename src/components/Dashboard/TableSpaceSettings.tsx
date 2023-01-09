@@ -40,10 +40,10 @@ type Props = {
 const TableSpaceSettings: React.FC<Props> = ({ open }) => {
   return (
     <Fragment>
-      <Typography fontSize="24px" sx={{ color: "#31394E" }}>
+      <Typography fontSize="2.4rem" sx={{ color: "#31394E" }}>
         Users on plan
       </Typography>
-      <TableContainer sx={{ mt: "40px" }}>
+      <TableContainer sx={{ mt: "4rem" }}>
         <Table size="small" sx={{ minWidth: 650 }} aria-label="a dense table">
           <TableHead>
             <TableRow
@@ -70,12 +70,12 @@ const TableSpaceSettings: React.FC<Props> = ({ open }) => {
                   opacity: row.status === "Inactive" ? "0.5" : "",
                 }}
               >
-                <TableCell component="th" scope="row" width="30px">
+                <TableCell component="th" scope="row" width="3rem">
                   <Avatar
                     sx={{
                       "&.MuiAvatar-root": {
-                        width: "20px",
-                        height: "20px",
+                        width: "2rem",
+                        height: "2rem",
                       },
                     }}
                     alt="Remy Sharp"
@@ -87,7 +87,7 @@ const TableSpaceSettings: React.FC<Props> = ({ open }) => {
                   {!open && (
                     <Typography
                       textAlign="center"
-                      fontSize="12px"
+                      fontSize="1.2rem"
                       sx={{
                         background: "#BFEDDF",
                         color: "#29C293",
@@ -101,13 +101,13 @@ const TableSpaceSettings: React.FC<Props> = ({ open }) => {
                   )}
                 </TableCell>
 
-                <TableCell sx={{ fontSize: "12px", color: "#838895" }}>
+                <TableCell sx={{ fontSize: "1.2rem", color: "#838895" }}>
                   {row.email}
                 </TableCell>
                 <TableCell
                   align="center"
                   sx={{
-                    fontSize: "12px",
+                    fontSize: "1.2rem",
                     color: row.status === "Inactive" ? "#FD5461" : "#29C293",
                   }}
                 >
@@ -121,14 +121,14 @@ const TableSpaceSettings: React.FC<Props> = ({ open }) => {
           </TableBody>
         </Table>
       </TableContainer>
-      <Box textAlign="right" mt="152px">
+      <Box textAlign="right" mt="15.2rem">
         <Button
           variant="contained"
           sx={{
             fontWeight: 500,
-            fontSize: "14px",
+            fontSize: "1.4rem",
             textTransform: "capitalize",
-            padding: "6px 24px",
+            padding: ".6rem 2.4rem",
           }}
         >
           Save

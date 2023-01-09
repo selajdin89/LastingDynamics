@@ -13,13 +13,14 @@ import {
   TextField,
 } from "@mui/material";
 
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import Loading from "../components/Loading";
 import Form from "../components/Authentication/Form";
 import ArrowDownIcon from "../assets/icons/ArrowDownIcon";
 import Title from "../components/Authentication/Title";
 import { top5Songs } from "../data/Data";
+import setLoading from "../HOC/setLoading";
 
 const textTitle = "signing up a new account";
 
@@ -103,17 +104,17 @@ const CompanySignUp = () => {
               <FormHelperText
                 sx={{
                   color: "#ADB0B8",
-                  fontSize: "12px",
-                  m: "24px 0 0 0",
+                  fontSize: "1.2rem",
+                  m: "2.4rem 0 0 0",
                 }}
               >
-                Company Name
+                {!error ? "Company Name" : ""}
               </FormHelperText>
               <TextField
                 variant="outlined"
                 sx={{ height: "100%", "& .MuiOutlinedInput-input": { p: 1 } }}
                 type="text"
-                placeholder="Insert your email"
+                placeholder="Insert your name"
                 id="text"
                 onChange={nameHandler}
                 onBlur={nameBlurHandler}
@@ -128,9 +129,9 @@ const CompanySignUp = () => {
             >
               {" "}
               <FormHelperText
-                sx={{ color: "#ADB0B8", fontSize: "12px", m: "24px 0 0 0" }}
+                sx={{ color: "#ADB0B8", fontSize: "1.2rem", m: "2.4rem 0 0 0" }}
               >
-                Your space will be
+                {!error ? "Your space will be" : ""}
               </FormHelperText>
               <TextField
                 variant="outlined"
@@ -138,7 +139,7 @@ const CompanySignUp = () => {
                 type="text"
                 onChange={spaceHandler}
                 onBlur={spaceBlurHandler}
-                placeholder="Password"
+                placeholder="Space"
                 id="text"
                 value={spaceInput}
                 helperText={spaceHasError && error}
@@ -151,7 +152,7 @@ const CompanySignUp = () => {
             >
               {" "}
               <FormHelperText
-                sx={{ color: "#ADB0B8", fontSize: "12px", m: "24px 0 0 0" }}
+                sx={{ color: "#ADB0B8", fontSize: "1.2rem", m: "2.4rem 0 0 0" }}
               >
                 Indusry
               </FormHelperText>
@@ -181,7 +182,7 @@ const CompanySignUp = () => {
             >
               {" "}
               <FormHelperText
-                sx={{ color: "#ADB0B8", fontSize: "12px", m: "24px 0 0 0" }}
+                sx={{ color: "#ADB0B8", fontSize: "1.2rem", m: "2.4rem 0 0 0" }}
               >
                 Number of employee
               </FormHelperText>
@@ -207,7 +208,7 @@ const CompanySignUp = () => {
             </FormControl>
             <FormGroup sx={{ mt: "3.1rem" }}>
               <FormControlLabel
-                sx={{ fontSize: "12px" }}
+                sx={{ fontSize: "1.2rem" }}
                 control={<Checkbox />}
                 label="Accetto le Condizioni di utilizzo e informativa sulla Privacy"
               />
@@ -236,4 +237,4 @@ const CompanySignUp = () => {
   );
 };
 
-export default CompanySignUp;
+export default setLoading(CompanySignUp);

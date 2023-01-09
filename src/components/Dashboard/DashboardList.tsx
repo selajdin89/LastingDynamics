@@ -30,7 +30,7 @@ const DashboardList = ({ state }: any) => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2200);
+    }, 2000);
   }, [state]);
 
   return (

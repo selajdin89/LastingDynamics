@@ -20,19 +20,19 @@ const Info = () => {
   };
   return (
     <Fragment>
-      <Typography fontSize="24px" sx={{ color: "#31394E", mb: "51px" }}>
+      <Typography fontSize="2.4rem" sx={{ color: "#31394E", mb: "5.1rem" }}>
         Info
       </Typography>
       <Box display="flex" flexDirection="column">
-        <Typography sx={{ color: "#ADB0B8", fontSize: "12px", mb: "12px" }}>
+        <Typography sx={{ color: "#ADB0B8", fontSize: "1.2rem", mb: "1.2rem" }}>
           Avatar
         </Typography>
         <Avatar sx={{ mb: "19px" }} />
-        <FormControl sx={{ width: "523px", mb: "16px" }}>
+        <FormControl sx={{ width: "5.23rem", mb: "1.6rem" }}>
           <FormHelperText
             sx={{
               color: "#ADB0B8",
-              fontSize: "12px",
+              fontSize: "1.2rem",
               mb: "8px",
               ml: "0",
             }}
@@ -48,11 +48,11 @@ const Info = () => {
             placeholder="Please enter your name"
           />
         </FormControl>
-        <FormControl sx={{ width: "523px", mb: "16px" }}>
+        <FormControl sx={{ width: "5.23rem", mb: "1.6rem" }}>
           <FormHelperText
             sx={{
               color: "#ADB0B8",
-              fontSize: "12px",
+              fontSize: "1.2rem",
               mb: "8px",
               ml: "0",
             }}
@@ -64,11 +64,11 @@ const Info = () => {
             placeholder="Please enter your user name"
           />
         </FormControl>
-        <FormControl sx={{ width: "523px", mb: "16px" }}>
+        <FormControl sx={{ width: "5.23rem", mb: "1.6rem" }}>
           <FormHelperText
             sx={{
               color: "#ADB0B8",
-              fontSize: "12px",
+              fontSize: "1.2rem",
               mb: "8px",
               ml: "0",
             }}
@@ -82,7 +82,7 @@ const Info = () => {
         </FormControl>
         <Box sx={{ minWidth: 120 }}>
           <Typography
-            fontSize="14px"
+            fontSize="1.4rem"
             textTransform="uppercase"
             sx={{
               color: "rgba(49, 57, 78, 0.5)",
