@@ -11,10 +11,9 @@ type Props = {
 };
 
 const Sidebar: React.FC<Props> = ({ children }) => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 1000);
