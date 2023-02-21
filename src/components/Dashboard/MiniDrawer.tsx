@@ -61,7 +61,6 @@ const MiniDrawer = () => {
         "https://roundrush-ffee1-default-rtdb.firebaseio.com/projectsList.json"
       );
       const responseData = await response.json();
-      console.log(responseData);
 
       setAcademies(responseData);
     };
@@ -139,6 +138,7 @@ const MiniDrawer = () => {
             <RoundRushLogo />
           </Box>
           <IconButton
+            className="button"
             color="inherit"
             aria-label="open drawer"
             onClick={handleDrawerOpen}
@@ -318,6 +318,7 @@ const MiniDrawer = () => {
                         />
 
                         <IconButton
+                          className="buttton"
                           sx={{ p: 0 }}
                           onClick={handlePopoverClick}
                           aria-describedby={id}

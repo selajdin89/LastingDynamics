@@ -72,7 +72,7 @@ const LoginForm = () => {
         </Typography>
 
         {isLoading && <Loading />}
-        {!isLoading && error && <ErrorMessage />}
+        {!isLoading && error && <ErrorMessage data-testid="error" />}
 
         <Box onSubmit={submitHandler} component="form">
           <FormControl

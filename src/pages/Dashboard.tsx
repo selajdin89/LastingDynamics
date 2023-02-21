@@ -103,48 +103,48 @@ const Dashboard = () => {
                 flexWrap="wrap"
                 gap="1.7rem"
               >
-                {React.Children.toArray(
-                  items.map((item) => (
-                    <Box
-                      sx={[
-                        tabsContainerStyle,
-                        { "&:hover": { background: "#E8F0FE" } },
-                      ]}
+                {items.map((item) => (
+                  <Box
+                    sx={[
+                      tabsContainerStyle,
+                      { "&:hover": { background: "#E8F0FE" } },
+                    ]}
+                  >
+                    <Link
+                      key={item.id}
+                      style={linkStyle}
+                      to="list"
+                      state={{
+                        todos: item.todos,
+                        name: item.name,
+                        id: item.id,
+                        initials: item.initials,
+                        color: item.color,
+                      }}
                     >
-                      <Link
-                        style={linkStyle}
-                        to="list"
-                        state={{
-                          todos: item.todos,
-                          name: item.name,
-                          id: item.id,
-                          initials: item.initials,
-                          color: item.color,
-                        }}
+                      <Box
+                        sx={[{ background: `${item.color}` }, tabsStyle]}
+                        onClick={() => setOpenTasks(true)}
                       >
-                        <Box
-                          sx={[{ background: `${item.color}` }, tabsStyle]}
-                          onClick={() => setOpenTasks(true)}
+                        <Typography
+                          component="p"
+                          sx={{
+                            fontSize: "2.6rem",
+                            fontFamily: "inherit",
+                            fontWeight: "500",
+                            color: "#fff",
+                          }}
                         >
-                          <Typography
-                            component="p"
-                            sx={{
-                              fontSize: "2.6rem",
-                              fontFamily: "inherit",
-                              fontWeight: "500",
-                              color: "#fff",
-                            }}
-                          >
-                            {item.initials}
-                          </Typography>
-                        </Box>
-                        <Typography sx={{ mt: "2.4rem", color: "#838895" }}>
-                          {item.name}
+                          {item.initials}
+                          {/* Current theme */}
                         </Typography>
-                      </Link>
-                    </Box>
-                  ))
-                )}
+                      </Box>
+                      <Typography sx={{ mt: "2.4rem", color: "#838895" }}>
+                        {item.name}
+                      </Typography>
+                    </Link>
+                  </Box>
+                ))}
               </Stack>
             </Box>
           </Grid>
@@ -166,4 +166,4 @@ const Dashboard = () => {
   );
 };
 
-export default setLoading(Dashboard);
+export default Dashboard;

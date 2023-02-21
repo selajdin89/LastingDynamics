@@ -9,11 +9,7 @@ import {
 } from "../assets/icons";
 import Avatar from "@mui/material/Avatar";
 const image = (
-  <Avatar
-    sx={{ width: "24px", height: "24px" }}
-    alt="Remy Sharp"
-    src={avatarImg}
-  />
+  <Avatar sx={{ width: "24px", height: "24px" }} alt="Remy Sharp" src={""} />
 );
 export const icons = [
   {

@@ -21,7 +21,7 @@ import { linkStyle } from "../../muiStyles/RouterLinks";
 import { SearchIcon } from "../../assets/icons";
 
 const TableObjectives = ({ state }: any) => {
-  const [todos, setTodos] = useState<Todo[]>(state.todos);
+  const [todos, setTodos] = useState<Todo[]>(state?.todos);
   const [searched, setSearched] = useState<string>("");
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {

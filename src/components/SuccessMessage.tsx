@@ -14,6 +14,7 @@ const SuccessMessage = () => {
         <CheckIcon />
       </Box>
       <Typography
+        variant="h5"
         padding="1.2rem 2.8rem .9rem 1.9rem"
         fontSize="1.2rem"
         fontFamily="inherit"

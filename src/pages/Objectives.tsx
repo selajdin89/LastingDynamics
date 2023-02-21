@@ -93,4 +93,4 @@ const Objectives = () => {
   );
 };
 
-export default setLoading(Objectives);
+export default Objectives;

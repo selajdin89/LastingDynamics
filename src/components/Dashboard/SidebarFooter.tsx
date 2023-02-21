@@ -16,8 +16,6 @@ type Input = {
 };
 
 const SidebarFooter = ({ open }: Input) => {
-  const [toolTip, setToolTip] = useState(false);
-  const [currentId, setCurrentId] = useState("");
   const dispatch = useAppDispatch();
 
   const navigate = useNavigate();

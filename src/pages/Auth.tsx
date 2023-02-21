@@ -9,7 +9,7 @@ const textTitle = "the optimized workflow out of the box";
 const Auth = () => {
   return (
     <Fragment>
-      <Title textTitle={textTitle} />
+      <Title data-testid="title" role="columnheader" textTitle={textTitle} />
       <Form>
         <LoginForm />
       </Form>

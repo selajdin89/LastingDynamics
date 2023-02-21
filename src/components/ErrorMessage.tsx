@@ -5,6 +5,7 @@ import WarningAmberIcon from "@mui/icons-material/WarningAmber";
 const ErrorMessage = () => {
   return (
     <Box
+      data-testid="error"
       position="relative"
       display="flex"
       sx={{ background: "#F4F6FC", color: "#FD5461", marginBottom: "2.4rem" }}
@@ -20,11 +21,12 @@ const ErrorMessage = () => {
         />
       </Box>
       <Typography
+        variant="h6"
         padding="1.2rem 2.8rem .9rem 5.2rem"
         fontSize="1.2rem"
         fontFamily="inherit"
       >
-        Please make sure yu have the correct email or password
+        Please make sure you have the correct email or password
       </Typography>
     </Box>
   );
